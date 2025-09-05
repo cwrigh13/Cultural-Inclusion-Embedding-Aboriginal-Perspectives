@@ -19,27 +19,6 @@ This project is built with a focus on simplicity, performance, and accessibility
 - **Tailwind CSS:** For modern, utility-first styling directly within the HTML.
 - **Vanilla JavaScript (ES6+):** For all interactivity, including the accordion, modals, progress bar, and quiz logic. No external frameworks are required.
 
-## Getting Started
-
-This is a static web application with no build process or external dependencies.
-
-To run the module locally:
-1.  Clone this repository to your local machine.
-2.  Open the `index.html` file directly in your preferred web browser (e.g., Chrome, Firefox, Safari, Edge).
-
-That's it! The learning module will be fully functional.
-
-## File Structure
-
-```
-.
-├── index.html       # Main HTML file containing all content, styles, and scripts.
-├── index.tsx        # (Currently unused) Placeholder for potential future TSX/React conversion.
-├── index.css        # (Currently unused) Placeholder for external CSS.
-├── metadata.json    # Application metadata.
-└── README.md        # This file.
-```
-
 ## Acknowledgements
 
 This learning module was developed for **Georges River Libraries** staff.
