@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Inclusion & Embedding Aboriginal Perspectives</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* New styles based on user's image */
+        body {
+          background-color: #ffffff; /* Light grey-blue background */
+          font-family: 'Work Sans', sans-serif;
+        }
+
+        .content-wrapper {
+            background-color: #e0f2f1; /* Light mint/teal background for content area */
+            border-radius: 18px;
+        }
+        
+        /* Original component styles */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+        .modal-backdrop {
+            transition: opacity 0.3s ease-in-out;
+        }
+        .quiz-option {
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        /* Custom Brand Colours (for components) */
+        .bg-primary { background-color: #00A5A5; }
+        .text-primary { color: #00A5A5; }
+        .border-primary { border-color: #00A5A5; }
+        .hover\:bg-primary-dark:hover { background-color: #007582; }
+
+        .bg-primary-dark { background-color: #007582; }
+        .text-primary-dark { color: #007582; }
+        .border-primary-dark { border-color: #007582; }
+
+        .bg-accent-light { background-color: #C8E6E6; }
+        .border-accent-light { border-color: #9AD3D4; }
+
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Progress Bar -->
+    <div id="progressBarContainer" class="sticky top-0 z-50 bg-gray-200 h-2.5 w-full">
+        <div id="progressBar" class="bg-primary-dark h-2.5" style="width: 0%; transition: width 0.5s ease;"></div>
+    </div>
+
+    <div class="max-w-4xl mx-auto p-4 sm:p-8">
+
+        <!-- Header -->
+        <header class="bg-primary-dark rounded-2xl p-6 text-white flex items-center justify-center">
+             <img src="https://georgesriver.spydus.com/api/maintenance/1.0/imagebrowser/image?blobName=a31cf63f-7e24-41d5-b1f8-c206bde45ce6.png" alt="Georges River Libraries Logo" class="h-32">
+        </header>
+        
+        <div class="content-wrapper p-4 sm:p-8 rounded-2xl mt-8">
+        <div class="text-left mb-8">
+             <h1 class="text-3xl md:text-4xl font-bold text-primary-dark">Cultural Inclusion & Embedding Aboriginal Perspectives</h1>
+             <p class="mt-2 text-lg text-gray-600">A learning module for Georges River Libraries staff based on the key learnings from the 2025 Koori Curriculum event.</p>
+        </div>
+        
+        <!-- Introduction -->
+        <section id="introduction" class="bg-white p-6 sm:p-8 rounded-2xl shadow-md mb-8 border border-gray-200 w-full">
+            <h2 class="text-2xl font-bold text-primary-dark mb-4">Core Principles for Authentic Cultural Inclusion</h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                This module provides a foundation for enhancing your practice of cultural inclusion. It is guided by four core principles to ensure our approach is respectful, authentic and meaningful.
+            </p>
+            <ul class="space-y-4">
+                <li class="flex items-start">
+                    <span class="text-primary-dark font-bold text-xl mr-4 mt-1">&#10003;</span>
+                    <div>
+                        <h4 class="font-bold">Authentic, Embedded Practice</h4>
+                        <p class="text-gray-600">Aboriginal culture should be woven into daily operations and programming, not treated as a separate "theme." It should be a holistic, everyday presence.</p>
+                    </div>
+                </li>
+                 <li class="flex items-start">
+                    <span class="text-primary-dark font-bold text-xl mr-4 mt-1">&#10003;</span>
+                    <div>
+                        <h4 class="font-bold">Continuous Learning</h4>
+                        <p class="text-gray-600">Cultural understanding is an ongoing journey, not a checklist. We are all continuously learning and should remain open to new insights.</p>
+                    </div>
+                </li>
+                 <li class="flex items-start">
+                    <span class="text-primary-dark font-bold text-xl mr-4 mt-1">&#10003;</span>
+                    <div>
+                        <h4 class="font-bold">Community and Country-Centric</h4>
+                        <p class="text-gray-600">Our practices should directly reflect the local Aboriginal community and the land (Country) on which we operate.</p>
+                    </div>
+                </li>
+                 <li class="flex items-start">
+                    <span class="text-primary-dark font-bold text-xl mr-4 mt-1">&#10003;</span>
+                    <div>
+                        <h4 class="font-bold">Inclusivity of All Cultures</h4>
+                        <p class="text-gray-600">While focusing on Aboriginal perspectives, our goal is to celebrate and embed all global cultures to ensure everyone feels a sense of belonging.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Accordion Modules -->
+        <div id="accordion-container" class="space-y-4 w-full">
+            <!-- Module 1 -->
+            <div class="accordion-item bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden">
+                <button class="accordion-header w-full flex justify-between items-center text-left p-6">
+                    <h3 class="text-xl font-bold text-primary-dark">Module 1: Understanding & Connecting to Country</h3>
+                    <span class="accordion-icon text-2xl font-light text-primary-dark">+</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <div class="pb-6 space-y-4 text-gray-700 leading-relaxed">
+                        <p>'Country' is a fundamental concept. It is not just land, but the waters, skies, animals, plants, and spiritual connections that have existed for millennia. Acknowledging Traditional Custodians is the first step in showing respect.</p>
+                        <h4 class="font-bold text-primary-dark pt-2">Practical Ways to Connect to Country:</h4>
+                        <ul class="list-disc list-outside space-y-2 pl-5">
+                           <li><strong>Learn the Local Seasons:</strong> Research the local Aboriginal seasons (e.g., via the Bureau of Meteorology website) by observing changes in plants, animals, winds, and tides. This helps ground your programs in culture throughout the year.</li>
+                           <li><strong>Explore Local Ecosystems:</strong> Learn about the endemic plants and animals in your area. This enriches understanding of biodiversity and Indigenous cultures.</li>
+                           <li><strong>On-Country Learning:</strong> "Country" is everywhere, including urban areas. Simple "walk and talk" programs in a local park are a powerful way to connect with the history and traditional ownership of the land.</li>
+                        </ul>
+                        <div class="mt-4 flex flex-col sm:flex-row gap-4">
+                            <button onclick="openModal('modal1')" class="bg-primary text-white font-bold py-2 px-6 rounded-full hover:bg-primary-dark transition shadow-sm">Reflection Question</button>
+                            <a href="https://aiatsis.gov.au/explore/map-indigenous-australia" target="_blank" class="bg-gray-200 text-gray-800 font-bold py-2 px-6 rounded-full hover:bg-gray-300 transition text-center shadow-sm">View AIATSIS Map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 2 -->
+            <div class="accordion-item bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden">
+                <button class="accordion-header w-full flex justify-between items-center text-left p-6">
+                    <h3 class="text-xl font-bold text-primary-dark">Module 2: Protocols & Welcome to Country</h3>
+                    <span class="accordion-icon text-2xl font-light text-primary-dark">+</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <div class="pb-6 space-y-4 text-gray-700 leading-relaxed">
+                        <p><strong>Welcome to Country</strong> can only be performed by a recognised Traditional Custodian of that specific Country. It is a cultural practice that has been performed for thousands of years to welcome visitors to their land.</p>
+                        <p>An <strong>Acknowledgement of Country</strong> can be given by anyone, and it is a way of showing respect for the Traditional Custodians. It is common practice to give an Acknowledgement at the start of meetings, events, and significant gatherings.</p>
+                        <div class="bg-orange-50 border-l-4 border-primary text-gray-700 p-4 rounded-r-lg mt-4">
+                          <p class="font-bold text-primary">Best Practice</p>
+                          <p>Always research the name of the Traditional Custodians of your area. If you are unsure, contact your local Aboriginal Land Council or cultural centre for advice. It is vital to implement this culture correctly and respectfully.</p>
+                        </div>
+                        <div class="mt-4">
+                             <button onclick="openModal('modal2')" class="bg-primary text-white font-bold py-2 px-6 rounded-full hover:bg-primary-dark transition shadow-sm">Reflection Question</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Module 3 -->
+            <div class="accordion-item bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden">
+                <button class="accordion-header w-full flex justify-between items-center text-left p-6">
+                    <h3 class="text-xl font-bold text-primary-dark">Module 3: Culturally Safe Collections & Resources</h3>
+                    <span class="accordion-icon text-2xl font-light text-primary-dark">+</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <div class="pb-6 space-y-4 text-gray-700 leading-relaxed">
+                        <p>A culturally safe collection actively promotes materials by Aboriginal and Torres Strait Islander creators and involves auditing existing collections for outdated or offensive content.</p>
+                         <h4 class="font-bold text-primary-dark pt-2">Key Strategies:</h4>
+                        <ul class="list-disc list-outside space-y-2 pl-5">
+                           <li><strong>Storytelling as a Core Method:</strong> Use 'own voices' books to share Dreamtime stories and history, and to introduce complex topics like the Stolen Generations in a sensitive, age-appropriate way.</li>
+                           <li><strong>Ethical Sourcing:</strong> Ensure all materials accurately represent the culture. Prioritise 'own voices' authors and illustrators such as Shelley Ware, Corey Tutt, Gregg Dreise, and Aunty Joy Murphy.</li>
+                           <li><strong>Mindful Consumerism:</strong> Before purchasing new resources, consider if they are environmentally friendly, ethical, or can be borrowed. Aim for quality over quantity.</li>
+                        </ul>
+                         <div class="mt-4 flex flex-col sm:flex-row gap-4">
+                            <button onclick="openModal('modal3')" class="bg-primary text-white font-bold py-2 px-6 rounded-full hover:bg-primary-dark transition shadow-sm">Reflection Question</button>
+                            <a href="https://kooricurriculum.com/" target="_blank" class="bg-gray-200 text-gray-800 font-bold py-2 px-6 rounded-full hover:bg-gray-300 transition text-center shadow-sm">Visit Koori Curriculum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 4 -->
+            <div class="accordion-item bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden">
+                <button class="accordion-header w-full flex justify-between items-center text-left p-6">
+                    <h3 class="text-xl font-bold text-primary-dark">Module 4: Community Engagement & Programming</h3>
+                    <span class="accordion-icon text-2xl font-light text-primary-dark">+</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <div class="pb-6 space-y-4 text-gray-700 leading-relaxed">
+                        <p>Meaningful engagement is built on genuine, lasting relationships, not transactional interactions. It's about listening and collaborating.</p>
+                         <h4 class="font-bold text-primary-dark pt-2">Ideas for Engagement:</h4>
+                        <ul class="list-disc list-outside space-y-2 pl-5">
+                           <li><strong>Language Integration:</strong> Identify and prioritise the local Aboriginal language. Engage with language custodians to include words and greetings in storytime. Use QR codes in displays for audio pronunciations.</li>
+                           <li><strong>Environmental Advocacy:</strong> Empower children to be advocates. Create programs where they can identify local problems (e.g., litter) and propose solutions (e.g., making signs, "Take 3 for the Sea").</li>
+                           <li><strong>Connect with your feet:</strong> Visit local Aboriginal businesses and community members. Attend local Welcome to Country ceremonies and listen deeply to Elders.</li>
+                            <li><strong>Seek Permission:</strong> Always seek permission from custodians before embedding shared stories or cultural practices into your regular programming.</li>
+                        </ul>
+                        <div class="mt-6">
+                             <button onclick="openModal('modal4')" class="bg-primary text-white font-bold py-2 px-6 rounded-full hover:bg-primary-dark transition shadow-sm">Reflection Question</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 5 -->
+            <div class="accordion-item bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden">
+                <button class="accordion-header w-full flex justify-between items-center text-left p-6">
+                    <h3 class="text-xl font-bold text-primary-dark">Module 5: Your Role as an Ally</h3>
+                    <span class="accordion-icon text-2xl font-light text-primary-dark">+</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <div class="pb-6 space-y-4 text-gray-700 leading-relaxed">
+                        <p>Every staff member has a role to play in fostering cultural safety and inclusion. Here are some ways you can contribute:</p>
+                        <ul class="list-disc list-outside space-y-3 mt-4 text-gray-700 pl-5">
+                            <li><strong>Be Open, Not Fearful:</strong> Don't be afraid to explore Aboriginal culture. Taking the first step leads to support and helps build future generations' connection to culture.</li>
+                            <li><strong>Facilitate, Don't Just Teach:</strong> Empower community members, especially children, to be advocates. Ask them how they want to solve problems and support their ideas.</li>
+                            <li><strong>Critically Reflect:</strong> Constantly evaluate activities to ensure they are genuinely fostering cultural understanding. Be open to changing practices based on new knowledge.</li>
+                            <li><strong>Build Knowledge to Build Respect:</strong> Invest time in learning with community members about local stories, flora, and fauna. Understanding fosters appreciation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Quiz Section -->
+        <section id="quiz-section" class="bg-white p-6 sm:p-8 rounded-2xl shadow-md mt-8 border border-gray-200 w-full">
+            <h2 class="text-2xl font-bold text-primary-dark mb-4 text-center">Knowledge Check</h2>
+            <div id="quiz-container" class="mx-auto">
+                <div id="quiz-question" class="text-lg font-medium mb-6 text-center"></div>
+                <div id="quiz-options" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4"></div>
+                <div id="quiz-feedback" class="text-center font-medium h-6"></div>
+            </div>
+            <div id="quiz-results" class="hidden text-center">
+                <h3 id="quiz-score" class="text-2xl font-bold text-primary-dark mb-2"></h3>
+                <p id="quiz-result-message" class="text-gray-700 mb-6"></p>
+                <button id="restart-quiz-btn" class="bg-primary text-white font-bold py-3 px-6 rounded-full hover:bg-primary-dark transition shadow-sm">Restart Quiz</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center pt-10 mt-8 text-gray-500 text-sm w-full">
+            <p>​Georges River Council acknowledges the Bidjigal people of the Eora Nation, who are the Traditional Custodians of all lands, waters and sky in the Georges River area. We pay our respect to their Elders past and present and extend that respect to all Aboriginal and Torres Strait Islander peoples who live work and meet on these lands.</p>
+             <h4 class="font-bold text-gray-600 mt-6 mb-2">Key Resources</h4>
+            <div class="mt-4 flex justify-center flex-wrap gap-3">
+                <a href="https://aiatsis.gov.au/explore/map-indigenous-australia" target="_blank" class="bg-white py-2 px-4 rounded-full text-sm font-medium text-primary-dark hover:bg-primary hover:text-black transition-colors duration-200 shadow-sm border border-gray-200">AIATSIS Map</a>
+                <a href="https://www.reconciliation.org.au/" target="_blank" class="bg-white py-2 px-4 rounded-full text-sm font-medium text-primary-dark hover:bg-primary hover:text-black transition-colors duration-200 shadow-sm border border-gray-200">Reconciliation Australia</a>
+                <a href="https://kooricurriculum.com/" target="_blank" class="bg-white py-2 px-4 rounded-full text-sm font-medium text-primary-dark hover:bg-primary hover:text-black transition-colors duration-200 shadow-sm border border-gray-200">Koori Curriculum</a>
+                <a href="https://www.creativespirits.info/" target="_blank" class="bg-white py-2 px-4 rounded-full text-sm font-medium text-primary-dark hover:bg-primary hover:text-black transition-colors duration-200 shadow-sm border border-gray-200">Creative Spirits</a>
+                <a href="http://www.bom.gov.au/iwk/" target="_blank" class="bg-white py-2 px-4 rounded-full text-sm font-medium text-primary-dark hover:bg-primary hover:text-black transition-colors duration-200 shadow-sm border border-gray-200">BOM Indigenous Weather</a>
+                <a href="https://www.humanrights.gov.au/" target="_blank" class="bg-white py-2 px-4 rounded-full text-sm font-medium text-primary-dark hover:bg-primary hover:text-black transition-colors duration-200 shadow-sm border border-gray-200">Australian Human Rights Commission</a>
+                <a href="https://georgesriver.sharepoint.com/sites/rivernet/Resources/Pages/Brand-Guidelines.aspx" target="_blank" class="bg-white py-2 px-4 rounded-full text-sm font-medium text-primary-dark hover:bg-primary hover:text-black transition-colors duration-200 shadow-sm border border-gray-200">GRC Acknowledgement Guidelines</a>
+            </div>
+        </footer>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal-backdrop fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center p-4">
+        <div class="modal-content bg-white p-8 rounded-2xl shadow-xl max-w-lg w-full transform transition-transform duration-300 scale-95">
+            <h3 class="text-xl font-bold text-primary-dark mb-4">Reflection Question</h3>
+            <p class="text-gray-700 mb-6">Beyond a formal Acknowledgement of Country, what is one practical action your library branch could take this month to connect a program to 'Country' (e.g., learning about a local plant or season)?</p>
+            <div id="answer1" class="hidden bg-gray-100 p-4 rounded-lg mb-6 text-sm">
+                <p class="font-bold text-gray-800">Suggested Answer:</p>
+                <p class="text-gray-700 mt-2">A library could theme a storytime around the current local Aboriginal season. This would involve researching the season, finding a related story by a First Nations author, and creating a simple craft activity using images of local flora or fauna that are prominent during this time.</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 mt-2 w-full">
+                <button onclick="showAnswer('answer1', this)" class="bg-primary text-white font-bold py-2 px-6 rounded-full hover:bg-primary-dark transition flex-1">Suggested Answer</button>
+                <button onclick="closeModal('modal1')" class="bg-gray-200 text-gray-800 font-bold py-2 px-6 rounded-full hover:bg-gray-300 transition flex-1">Close</button>
+            </div>
+        </div>
+    </div>
+     <div id="modal2" class="modal-backdrop fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center p-4">
+        <div class="modal-content bg-white p-8 rounded-2xl shadow-xl max-w-lg w-full transform transition-transform duration-300 scale-95">
+            <h3 class="text-xl font-bold text-primary-dark mb-4">Reflection Question</h3>
+            <p class="text-gray-700 mb-6">A colleague is hesitant to use the local Aboriginal language greeting in storytime for fear of "getting it wrong." How could you support them in a way that respects their concern but also encourages them to take a first step?</p>
+            <div id="answer2" class="hidden bg-gray-100 p-4 rounded-lg mb-6 text-sm">
+                <p class="font-bold text-gray-800">Suggested Answer:</p>
+                <p class="text-gray-700 mt-2">First, validate their concern—it shows they care about being respectful. Suggest finding an online audio resource from a local language centre to hear the correct pronunciation. You could offer to practise with them and remind them that the community generally appreciates a genuine attempt. Starting with just one word, like "hello," is a great first step.</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 mt-2 w-full">
+                <button onclick="showAnswer('answer2', this)" class="bg-primary text-white font-bold py-2 px-6 rounded-full hover:bg-primary-dark transition flex-1">Suggested Answer</button>
+                <button onclick="closeModal('modal2')" class="bg-gray-200 text-gray-800 font-bold py-2 px-6 rounded-full hover:bg-gray-300 transition flex-1">Close</button>
+            </div>
+        </div>
+    </div>
+     <div id="modal3" class="modal-backdrop fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center p-4">
+        <div class="modal-content bg-white p-8 rounded-2xl shadow-xl max-w-lg w-full transform transition-transform duration-300 scale-95">
+            <h3 class="text-xl font-bold text-primary-dark mb-4">Reflection Question</h3>
+            <p class="text-gray-700 mb-6">Think about your library's junior fiction section. What steps could you take this month to begin a 'collection audit' to assess the quality and authenticity of its Aboriginal and Torres Strait Islander representation?</p>
+            <div id="answer3" class="hidden bg-gray-100 p-4 rounded-lg mb-6 text-sm">
+                 <p class="font-bold text-gray-800">Suggested Answer:</p>
+                 <p class="text-gray-700 mt-2">A first step could be to create a checklist based on recognised guidelines (like those from AIATSIS or the State Library). Then, I could spend a few hours spot-checking 10-15 popular or older titles against the checklist to identify common issues, such as outdated terminology or stereotypical portrayals. This initial sample would help build a case for a more thorough audit.</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 mt-2 w-full">
+                <button onclick="showAnswer('answer3', this)" class="bg-primary text-white font-bold py-2 px-6 rounded-full hover:bg-primary-dark transition flex-1">Suggested Answer</button>
+                <button onclick="closeModal('modal3')" class="bg-gray-200 text-gray-800 font-bold py-2 px-6 rounded-full hover:bg-gray-300 transition flex-1">Close</button>
+            </div>
+        </div>
+    </div>
+     <div id="modal4" class="modal-backdrop fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center p-4">
+        <div class="modal-content bg-white p-8 rounded-2xl shadow-xl max-w-lg w-full transform transition-transform duration-300 scale-95">
+            <h3 class="text-xl font-bold text-primary-dark mb-4">Reflection Question</h3>
+            <p class="text-gray-700 mb-6">A library wants to start a First Nations storytime. The manager suggests asking a well-known Aboriginal community member to volunteer. Why is it important to offer payment for this person's time, knowledge, and cultural labour? What does this demonstrate about moving from a transactional to a relational approach?</p>
+            <div id="answer4" class="hidden bg-gray-100 p-4 rounded-lg mb-6 text-sm">
+                 <p class="font-bold text-gray-800">Suggested Answer:</p>
+                 <p class="text-gray-700 mt-2">Offering payment shows respect for their expertise, cultural knowledge, and time, acknowledging it as a professional service. It avoids placing the burden of "community service" on individuals who are already frequently asked to share their culture for free. This moves the dynamic from a one-sided transaction to a reciprocal, professional partnership, which is the foundation of a genuine and respectful relationship.</p>
+            </div>
+             <div class="flex flex-col sm:flex-row gap-4 mt-2 w-full">
+                <button onclick="showAnswer('answer4', this)" class="bg-primary text-white font-bold py-2 px-6 rounded-full hover:bg-primary-dark transition flex-1">Suggested Answer</button>
+                <button onclick="closeModal('modal4')" class="bg-gray-200 text-gray-800 font-bold py-2 px-6 rounded-full hover:bg-gray-300 transition flex-1">Close</button>
+            </div>
+        </div>
+    </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // --- Accordion Logic ---
+        const accordionItems = document.querySelectorAll('.accordion-item');
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+        let openedAccordions = new Set();
+        const totalModules = accordionHeaders.length;
+
+        accordionHeaders.forEach((header, index) => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const icon = header.querySelector('.accordion-icon');
+                const isOpen = content.style.maxHeight;
+
+                if (isOpen) {
+                    content.style.maxHeight = null;
+                    icon.textContent = '+';
+                    openedAccordions.delete(index);
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.textContent = '−';
+                    openedAccordions.add(index);
+                }
+                updateProgressBar();
+            });
+        });
+
+        // --- Progress Bar Logic ---
+        const progressBar = document.getElementById('progressBar');
+        function updateProgressBar() {
+            const progress = (openedAccordions.size / totalModules) * 100;
+            progressBar.style.width = progress + '%';
+        }
+
+        // --- Modal Logic ---
+        window.openModal = function(modalId) {
+            const modal = document.getElementById(modalId);
+            if (!modal) return;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.querySelector('.modal-content').classList.remove('scale-95');
+            }, 10);
+        };
+
+        window.closeModal = function(modalId) {
+            const modal = document.getElementById(modalId);
+            if (!modal) return;
+
+            // Hide any visible answers within this modal before closing
+            const answerEl = modal.querySelector('[id^="answer"]');
+            if (answerEl && !answerEl.classList.contains('hidden')) {
+                answerEl.classList.add('hidden');
+            }
+
+            // Find and show the 'Suggested Answer' button again
+            const suggestButton = modal.querySelector('button[onclick^="showAnswer"]');
+            if(suggestButton) {
+                suggestButton.classList.remove('hidden');
+            }
+
+            modal.classList.add('opacity-0');
+            modal.querySelector('.modal-content').classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = '';
+            }, 300);
+        };
+        
+        document.querySelectorAll('.modal-backdrop').forEach(backdrop => {
+            backdrop.addEventListener('click', function(event) {
+                if (event.target === this) {
+                    closeModal(this.id);
+                }
+            });
+        });
+
+        // --- Suggested Answer Logic ---
+        window.showAnswer = function(answerId, button) {
+            const answerEl = document.getElementById(answerId);
+            if (answerEl) {
+                answerEl.classList.remove('hidden');
+                button.classList.add('hidden');
+            }
+        };
+        
+        // --- Quiz Logic ---
+        const quizData = [
+            {
+                question: "Who is permitted to perform a 'Welcome to Country'?",
+                options: ["Anyone", "The Mayor", "A recognised Traditional Custodian", "A library manager"],
+                answer: "A recognised Traditional Custodian"
+            },
+            {
+                question: "An authentic approach to cultural inclusion means...",
+                options: ["Having a 'cultural corner' display", "Celebrating NAIDOC week only", "Weaving culture into daily operations", "Only focusing on one culture"],
+                answer: "Weaving culture into daily operations"
+            },
+            {
+                question: "Learning about local Aboriginal seasons is a practical way to...",
+                options: ["Predict the weather", "Connect programming to Country", "Replace the Gregorian calendar", "Meet botanists"],
+                answer: "Connect programming to Country"
+            },
+            {
+                question: "What does the term 'own voices' refer to in collection development?",
+                options: ["Books with audio versions", "Stories written by non-Indigenous allies", "Stories created by people from the communities they represent", "Autobiographies of famous people"],
+                answer: "Stories created by people from the communities they represent"
+            },
+            {
+                question: "Meaningful community engagement is best described as...",
+                options: ["A one-off transaction for a service", "Building long-term, respectful relationships", "Only engaging during Reconciliation Week", "Assuming you know what the community wants"],
+                answer: "Building long-term, respectful relationships"
+            }
+        ];
+
+        const quizContainer = document.getElementById('quiz-container');
+        const questionEl = document.getElementById('quiz-question');
+        const optionsEl = document.getElementById('quiz-options');
+        const feedbackEl = document.getElementById('quiz-feedback');
+        const resultsContainer = document.getElementById('quiz-results');
+        const scoreEl = document.getElementById('quiz-score');
+        const resultMessageEl = document.getElementById('quiz-result-message');
+        const restartBtn = document.getElementById('restart-quiz-btn');
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        function startQuiz() {
+            currentQuestionIndex = 0;
+            score = 0;
+            quizContainer.classList.remove('hidden');
+            resultsContainer.classList.add('hidden');
+            feedbackEl.textContent = '';
+            showQuestion();
+        }
+
+        function showQuestion() {
+            const currentQuestion = quizData[currentQuestionIndex];
+            questionEl.textContent = currentQuestion.question;
+            optionsEl.innerHTML = '';
+            currentQuestion.options.forEach(option => {
+                const button = document.createElement('button');
+                button.textContent = option;
+                button.classList.add('quiz-option', 'w-full', 'p-4', 'border-2', 'rounded-lg', 'text-left', 'hover:bg-accent-light', 'hover:border-primary');
+                button.onclick = () => selectAnswer(option, button);
+                optionsEl.appendChild(button);
+            });
+        }
+
+        function selectAnswer(selectedOption, button) {
+            const correct = selectedOption === quizData[currentQuestionIndex].answer;
+            
+            Array.from(optionsEl.children).forEach(btn => {
+                btn.disabled = true;
+                if (btn.textContent === quizData[currentQuestionIndex].answer) {
+                    btn.classList.add('bg-green-100', 'border-green-500');
+                }
+            });
+
+            if (correct) {
+                score++;
+                feedbackEl.textContent = "Correct!";
+                feedbackEl.classList.add('text-green-600');
+                feedbackEl.classList.remove('text-red-600');
+                button.classList.add('bg-green-100', 'border-green-500');
+
+            } else {
+                feedbackEl.textContent = "Not quite.";
+                feedbackEl.classList.add('text-red-600');
+                feedbackEl.classList.remove('text-green-600');
+                button.classList.add('bg-red-100', 'border-red-500');
+            }
+
+            setTimeout(() => {
+                currentQuestionIndex++;
+                if (currentQuestionIndex < quizData.length) {
+                    feedbackEl.textContent = '';
+                    showQuestion();
+                } else {
+                    showResults();
+                }
+            }, 1500);
+        }
+
+        function showResults() {
+            quizContainer.classList.add('hidden');
+            resultsContainer.classList.remove('hidden');
+            scoreEl.textContent = `Your score: ${score} out of ${quizData.length}`;
+            let message = '';
+            if (score === quizData.length) {
+                message = "Excellent work! You have a strong understanding of these key concepts.";
+            } else if (score >= quizData.length / 2) {
+                message = "Great effort! Consider reviewing the modules to solidify your knowledge.";
+            } else {
+                message = "A good start. This module is always here for you to revisit and learn more.";
+            }
+            resultMessageEl.textContent = message;
+        }
+
+        restartBtn.addEventListener('click', startQuiz);
+
+        startQuiz();
+    });
+</script>
+
+</body>
+</html>
+
+
+
+
+
